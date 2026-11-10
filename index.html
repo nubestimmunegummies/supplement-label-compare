@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supplement Label Compare</title>
+  <meta name="description" content="Compare supplement labels side by side and see which ingredients appear in more than one product.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="intro">
+    <h1>Supplement Label Compare</h1>
+    <p>Pick two or more products to see their labels side by side. Ingredients that show up in more than one selected product are highlighted, so overlap is easy to spot before you combine supplements.</p>
+  </header>
+
+  <main>
+    <fieldset class="picker">
+      <legend>Products to compare</legend>
+      <div id="picker-options" class="picker-options"></div>
+    </fieldset>
+
+    <section class="summary" aria-live="polite">
+      <h2>Shared ingredients</h2>
+      <ul id="overlap-list"></ul>
+    </section>
+
+    <section aria-label="Product labels">
+      <div id="panels" class="panels"></div>
+    </section>
+  </main>
+
+  <footer class="footnote">
+    <p>Sample data comes from the public product labels in the <a href="https://www.nubest.com/collections/skin-brightening-supplement">NuBest skin brightening collection</a>. Labels can change, so check the current source before relying on this data.</p>
+    <p>This tool is a coding demo for comparing ingredient lists. It is not health or medical advice. Talk to a doctor or pharmacist before starting or combining supplements.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
